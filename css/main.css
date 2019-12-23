@@ -1,0 +1,179 @@
+.container{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display: grid;
+}
+.navigation{
+   background: black;
+  
+}
+
+.navigation ul a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:inline-block;
+    border-radius: 5px;
+}
+.navigation li{
+    float: left;
+    width: 145px;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: black;
+   
+}
+.navigation li:hover{
+    background: #241f1f;
+    border-radius: 5px;
+}
+ul.drop-menu{
+    position: absolute;
+    top:100%;
+    left:0%;
+    width: 100%;
+    padding: 0;
+    background: none;
+}
+ul.drop-menu li{
+    background: #241f1f;
+    color:rgba(225,225,225,225);
+    opacity: 0;
+
+}
+.drop-menu li:hover{
+    background: rgb(80, 77, 77);
+}
+.drop-menu li:last-child{
+    border-radius: 0px 0px 5px 5px;
+}
+.drop-menu li{
+    display: none;
+    transform-origin: top center;
+}
+.navigation li:hover .drop-menu li{
+    display: block;
+}
+.drop-menu{
+    perspective: 1000px;
+}
+.navigation li:hover .menu-1 li:nth-child(1){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out forwards;
+
+}
+.navigation li:hover .menu-1 li:nth-child(2){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 150ms  forwards;
+
+}
+.navigation li:hover .menu-1 li:nth-child(3){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 300ms  forwards;
+
+}
+.navigation li:hover .menu-1 li:nth-child(4){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 450ms  forwards;
+
+}
+.navigation li:hover .menu-1 li:nth-child(5){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 600ms  forwards;
+
+}
+.navigation li:hover .menu-1 li:nth-child(6){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 750ms  forwards;
+
+}
+
+
+.navigation li:hover .menu-2 li:nth-child(1){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out forwards;
+
+}
+.navigation li:hover .menu-2 li:nth-child(2){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 150ms  forwards;
+
+}
+.navigation li:hover .menu-2 li:nth-child(3){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 300ms  forwards;
+
+}
+.navigation li:hover .menu-2 li:nth-child(4){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 450ms  forwards;
+
+}
+.navigation li:hover .menu-2 li:nth-child(5){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 600ms  forwards;
+
+}
+.navigation li:hover .menu-2 li:nth-child(6){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 750ms  forwards;
+
+}
+
+.navigation li:hover .menu-3 li:nth-child(1){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out forwards;
+
+}
+.navigation li:hover .menu-3 li:nth-child(2){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 150ms  forwards;
+
+}
+.navigation li:hover .menu-3 li:nth-child(3){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 300ms  forwards;
+
+}
+.navigation li:hover .menu-3 li:nth-child(4){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 450ms  forwards;
+
+}
+.navigation li:hover .menu-3 li:nth-child(5){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 600ms  forwards;
+
+}
+.navigation li:hover .menu-3 li:nth-child(6){
+    opacity: 0;
+    animation: menu1 300ms ease-in-out 750ms  forwards;
+
+}
+@keyframes menu1{
+    0%{
+        opacity: 0;
+        transform: rotatex(-90deg);
+    }
+    80%{
+        opacity: 1;
+        transform: rotatex(10deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotatex(0deg);
+    }
+}
